@@ -17,3 +17,9 @@ def generate_primes_list(number):
         primes.append(i)
 
     return primes
+
+# We want to only generate lists for numbers > 0
+def non_negative_integer(number):
+    if number > 0:
+        return True
+    return False
