@@ -9,6 +9,10 @@
 6. export FLASK_APP=hello.py
 7. flask run
 
+## To run with dockerfile:
+8. sudo docker build --tag flask-app-challenge .
+9. sudo docker run --name flask-app-challenge -p 5001:5001 flask-app-challenge
+
 ## Current Endpoints: 
 1. /<int:number> will display integers from 1 to that number
 2. /<int:number>/odd will display only odd numbers in that range
