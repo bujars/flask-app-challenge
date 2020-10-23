@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{title}}</title>
+    {% endif %}
+</head>
+<body>
+{% if title %}
+    <h1>{{title}}</h1>
+{% endif %}
+<!-- Print all digits  in list -->
+<ol style="border-style: solid; overflow:hidden; overflow-y:scroll; height:300px; width:18%;">
+<!-- Look through numbers if n is present -->
+{%for i in numbers%}
+    <ul list-style-type="none">{{i}}</ul>
+{%endfor%}
+</ol>
+
+</body>
+</html>
